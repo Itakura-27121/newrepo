@@ -1,5 +1,6 @@
 
 name: PR CI (Node + ESLint)
+
 on:
   pull_request:
     branches: [ main ]
@@ -8,6 +9,7 @@ on:
 jobs:
   lint-and-test:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -16,6 +18,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: 'npm' # 任意：npm の依存をキャッシュ
 
       - name: Install
         run: npm ci
@@ -24,3 +27,4 @@ jobs:
         run: npm run lint --if-present
 
       - name: Test
+        run: npm test --if-present
