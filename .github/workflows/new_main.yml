@@ -18,7 +18,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm' # 任意：npm の依存をキャッシュ
+          cache: 'npm' # 任意：依存キャッシュ
 
       - name: Install
         run: npm ci
