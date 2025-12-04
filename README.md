@@ -1,4 +1,4 @@
 # newrepo
-試行
+隧ｦ陦�
 
-readme更新1
+readme譖ｴ譁ｰ1
