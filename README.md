@@ -1,6 +1,7 @@
 # newrepo
-隧ｦ陦�
 
-readme譖ｴ譁ｰ1
+action→ダッシュボード生成
+projects→自動ビルド・テストコード確認
 
-↑VSコードで編集後文字化け(Shift-Jis/UTF-8×)
+release→リリースノート生成
+コミット①
